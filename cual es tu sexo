@@ -1,0 +1,19 @@
+Proceso hola
+    Definir sexo Como Caracter;
+    Definir cont, male, female Como Entero;
+	
+    cont=0;
+    Repetir
+        Escribir 'Cual es tu sexo?' Sin Saltar;
+        leer sexo;
+        cont=cont+1;
+        si sexo = "hombre" Entonces
+            male=male+1; 
+        SiNo
+            female=female+1;
+        FinSi
+    Hasta Que cont=3;
+	
+    Escribir 'Mujeres: ', female, ' Hombres: ', male;
+	
+FinProceso

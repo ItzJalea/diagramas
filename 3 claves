@@ -1,0 +1,18 @@
+Proceso sin_titulo
+	Definir  clave, error Como entero;
+	Repetir
+		Escribir "Indique su contraseña";
+		leer clave;
+		// Y = si uno de los parametros no se cumple sucede esto
+		si clave <> 352 y clave <> 259 y clave <> 569 Entonces
+			Escribir "Contraseña incorrecta";
+			error = error + 1;
+		FinSi
+		// O = si se cumple uno de los parametros sucede esto
+	Hasta Que clave = 352 O clave = 259 o clave = 569 o error = 3
+	si clave = 352 O clave = 259 o clave = 569 Entonces
+		Escribir "Ingresado con exito";
+	SiNo
+		Escribir "superaste el maximo de errores";
+	FinSi
+FinProceso
